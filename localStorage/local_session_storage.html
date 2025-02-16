@@ -13,10 +13,7 @@
     <title>Gerenciador de tarefas</title>
     <link rel="icon" href="ico.svg">
 
-    <script>
-
-
-    </script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -67,13 +64,36 @@
         <div class="row mt-2 col-12">
             <div>
                 <span class="d-flex gap-2 mb-5"">
-                    <button class=" btn" style="background-color: #589bb8; color: white;" id="adicionar" onclick="adicionarTarefa()">Adicionar tarefa</button>
-                    <button class="btn" style="background-color: #589bb8; color: white;" id="remover" onclick="removerTarefa()">Buscar tarefa</button>
-                    <button class="btn" style="background-color: #589bb8; color: white;" id="consultar" onclick="consultarLista()">Consultar lista</button>
+                    <button class=" btn" style="background-color: #589bb8; color: white;" id="adicionar"
+                    onclick="adicionarTarefa()">Adicionar tarefa</button>
+                    <button class="btn" style="background-color: #589bb8; color: white;" id="remover"
+                        onclick="removerTarefa()">Buscar tarefa</button>
+                    <button class="btn" style="background-color: #589bb8; color: white;" id="consultar"
+                        onclick="consultarLista()">Consultar lista</button>
                 </span>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exibirModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="estilo-modal">
+                    <h5 class="modal-title" id="titulo-modal"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="conteudo-modal"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal" id="bota-config"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
