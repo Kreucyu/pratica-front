@@ -19,8 +19,18 @@
 
     <title>Gerenciador de tarefas</title>
     <link rel="icon" href="ico.svg">
-    <style>.btn-primary {color: white; background-color: #589bb8; border-color: #589bb8;}
-        .btn-primary:hover {color: white; background-color: #437a8f; border-color: #437a8f; }
+    <style>
+        .btn-primary {
+            color: white;
+            background-color: #589bb8;
+            border-color: #589bb8;
+        }
+
+        .btn-primary:hover {
+            color: white;
+            background-color: #437a8f;
+            border-color: #437a8f;
+        }
     </style>
     <script src="app.js"></script>
 </head>
@@ -116,20 +126,3 @@
 </body>
 
 </html>
-
-<!-- **Requisitos:**  
-
-2. **Marcar como Concluída:** Cada tarefa terá um botão que permitirá marcar ou desmarcar como concluída.  
-3. **Remover Tarefa:** Deve ser possível remover uma tarefa da lista.  
-4. **Persistência de Dados:**  
-   - A lista de tarefas será salva no `localStorage`, para que as tarefas fiquem disponíveis mesmo após fechar o navegador.  
-   - O nome do usuário será salvo no `sessionStorage` e será apagado quando a aba for fechada.  
-5. **Nome do Usuário:** O usuário pode inserir um nome, que será salvo no `sessionStorage` e exibido na página enquanto ele estiver com a aba aberta.
-
----
-
-### **Passos para Implementação:**  
-1. Crie um arquivo HTML com um campo de entrada para o nome do usuário e outro para adicionar tarefas.  
-2. Use JavaScript para manipular o `localStorage` e `sessionStorage`.  
-3. Exiba as tarefas armazenadas ao carregar a página.  
-4. Atualize o armazenamento sempre que uma tarefa for adicionada, marcada como concluída ou removida.   -->
