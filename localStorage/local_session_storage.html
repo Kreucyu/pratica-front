@@ -13,7 +13,9 @@
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- JQuerry -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
 
     <title>Gerenciador de tarefas</title>
     <link rel="icon" href="ico.svg">
@@ -32,7 +34,8 @@
         <div class="row col-12 mb-5">
             <h4 class="mb-2">Qual seu nome?</h4>
             <span class="d-flex" style="gap: 10px;">
-                <input class="form-control" type="text" placeholder="Insira seu nome" style="width: 100%" id="usuario" onblur="salvarUsuario()">
+                <input class="form-control" type="text" placeholder="Insira seu nome" style="width: 100%" id="usuario"
+                    onblur="salvarUsuario()">
             </span>
 
         </div>
@@ -64,9 +67,9 @@
         </div>
         <div class="row mt-2 col-12">
             <div>
-                <span class="d-flex gap-2 mb-5"">
+                <span class="d-flex gap-2 mb-5">
                     <button class=" btn" style="background-color: #589bb8; color: white;" id="adicionar"
-                    onclick="selecionarTarefa(1)">Adicionar tarefa</button>
+                        onclick="selecionarTarefa(1)">Adicionar tarefa</button>
                     <button class="btn" style="background-color: #589bb8; color: white;" id="remover"
                         onclick="selecionarTarefa(2)">Buscar tarefa</button>
                     <button class="btn" style="background-color: #589bb8; color: white;" id="consultar"
@@ -74,37 +77,40 @@
                 </span>
             </div>
         </div>
-    </div>
-    <div class="row mt-2 col-12">
-        <table>
-            <thead>
-                <tr>
-                    <th>Descrição</th>
-                    <th>Data</th>
-                    <th>Prioridade</th>
-                    <th>Descrição</th>
-
-                    
-                </tr>
-            </thead>
-        </table>
-    </div>
-
-    <!-- Modal -->
-<div class="modal fade" id="exibirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header" id="estilo-modal">
-                <h5 class="modal-title" id="titulo-modal"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="conteudo-modal"></div>
-            <div class="modal-footer">
-                <button type="button" class="btn" data-bs-dismiss="modal" id="botao-config"></button>
+        <div class="row mt-2" id="mostrar" style="display: none;">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                            <th>Prioridade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaTarefas">
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-</div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exibirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="estilo-modal">
+                    <h5 class="modal-title" id="titulo-modal"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="conteudo-modal"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal" id="botao-config"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
