@@ -20,6 +20,7 @@
     <title>Gerenciador de tarefas</title>
     <link rel="icon" href="ico.svg">
     <style>
+        
         .btn-primary {
             color: white;
             background-color: #589bb8;
@@ -31,12 +32,24 @@
             background-color: #437a8f;
             border-color: #437a8f;
         }
+
+        @media (max-width: 550px) {
+            .table {
+                font-size: 14px
+            }
+
+            .table th, .table td {
+                padding: 5px;
+            }
+        }
+
     </style>
-    <script src="app.js"></script>
+    <script src="app.js">
+    </script>
 </head>
 
 <body>
-    <div class="container col-12">
+    <div class="container">
         <div class="row d-flex col-12">
             <span>
                 <h2 class="mt-5 mb-5"><i class="fa-solid fa-list-check">&nbsp;&nbsp;</i>Gerenciador de Tarefas</h2>
