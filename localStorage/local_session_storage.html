@@ -19,7 +19,9 @@
 
     <title>Gerenciador de tarefas</title>
     <link rel="icon" href="ico.svg">
-
+    <style>.btn-primary {color: white; background-color: #589bb8; border-color: #589bb8;}
+        .btn-primary:hover {color: white; background-color: #437a8f; border-color: #437a8f; }
+    </style>
     <script src="app.js"></script>
 </head>
 
@@ -70,25 +72,24 @@
                 <span class="d-flex gap-2 mb-5">
                     <button class=" btn" style="background-color: #589bb8; color: white;" id="adicionar"
                         onclick="selecionarTarefa(1)">Adicionar tarefa</button>
-                    <button class="btn" style="background-color: #589bb8; color: white;" id="remover"
-                        onclick="selecionarTarefa(2)">Buscar tarefa</button>
                     <button class="btn" style="background-color: #589bb8; color: white;" id="consultar"
-                        onclick="selecionarTarefa(3)">Consultar lista</button>
+                        onclick="selecionarTarefa(2)">Consultar</button>
                 </span>
             </div>
         </div>
-        <div class="row mt-2" id="mostrar" style="display: none;">
+        <div class="row mt-2" id="mostrar">
             <div class="col">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Descrição</th>
-                            <th>Data</th>
-                            <th>Prioridade</th>
-                            <th>Status</th>
+                            <th class="text-center">Descrição</th>
+                            <th class="text-center">Data</th>
+                            <th class="text-center">Prioridade</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Deletar</th>
                         </tr>
                     </thead>
-                    <tbody id="listaTarefas">
+                    <tbody id="listaTarefas" class="text-center">
                     </tbody>
                 </table>
             </div>
